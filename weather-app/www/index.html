@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+		<title>WeatherApp</title>
+		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css"
+	</head>
+	<body>
+		<div class="container">
+			<article id="page-one" class="page">
+
+				<div class="top"> 
+					<h1 class="city-name"> City Name  </h1>
+				</div>
+
+				<div class="middle">
+					<h1 class="current-temperature">  </h1>
+					<p class="current-summary"> </p>
+					<div class="current-info"> 
+							Current Info
+					</div>
+					<p class="current-summary-icon"> </p>
+				</div>
+				
+				<div class="bottom">
+					<div class="weekday day-1">
+						<h3 class="day-names"> Today </h3>
+						<span class="temp-icon one">  </span>
+						 <span class="today-temperature day-temp">  </span> <br>
+					</div>
+
+					<div class="weekday day-2">
+						<h3 class="day-names"> Tomorrow </h3>
+						<span class="temp-icon two">  </span>
+						<span class="tomorrow-temperature day-temp">  </span> <br>
+					</div>
+
+					<div class="weekday day-3">
+						<h3 class="day-names"> Third  </h3>
+						<span class="temp-icon three">  </span>
+						<span class="third-day-temperature day-temp">  </span> <br>
+					</div>
+				</div>	
+
+			</article>
+			<article id="page-two" class="page right">
+				<div class="top"> 
+					<h1 class="city-name"> Hourly </h1>
+					<table id="summaries">
+
+					</table>
+				</div>
+			</article>
+			
+			<article id="page-three" class="page right">
+				<div class="top"> 
+					<h1 class="city-name"> Hourly </h1>
+					<table id="summaries2">
+
+					</table>
+				</div>
+			</article>
+		
+		</div>
+		<script src="cordova.js"></script>
+		<script src="assets/components/jquery/dist/jquery.min.js"></script>
+		<script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/components/hammerjs/hammer.min.js"></script>
+		<script src="assets/components/jquery-hammerjs/jquery.hammer.js"></script>
+		<script src="assets/js/index.js"></script>
+
+	</body>
+</html>

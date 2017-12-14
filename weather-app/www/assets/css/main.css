@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden; 
+	font-family: 'Lato', sans-serif;
+}
+
+.container{
+	width: 100%;
+}
+
+article{
+	width: 90%;
+	margin: 0 auto;
+}
+
+#page-one{
+	background-color: #BF5468;
+	color: #F2F2F2;
+}
+
+#page-two {
+	background-color: #425B8C;
+	color: #F2F2F2;
+}
+
+#page-three {
+	background-color: #A66C6B;
+	color: #F2F2F2;
+}
+
+.page {
+	position: absolute;
+	width: 100%;
+	padding: 20px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+.page.left {
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+.page.right {
+	-webkit-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
+}
+
+/* screen 1 */
+
+/* top */
+.top{
+	display: block;
+	height: 10vh;
+}
+
+.city-name{	
+	text-align: center;
+	font-size: 30px;
+}
+
+.current-info{
+	text-align: center;
+	font-size: 10px;
+}
+
+.current-info-pieces{
+	padding: 0 5% 0 5%;
+}
+
+/* middle */
+.middle{
+	display: block;
+	height: 40vh;
+}
+
+.current-summary{
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 5%;
+}
+
+.current-temperature{
+	text-align: center;
+	font-size: 120px;
+}
+
+/* bottom */
+.bottom{
+	display: block;
+	margin: 0 auto;
+	height: 20vh;
+}
+.bottom > .weekday{
+	padding: 20px;
+}
+
+.weekday{
+	width: 33%;
+}
+
+.day-names{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.temp-icon{
+	display: block;
+	padding-bottom: 20px;
+}
+
+.day-1{
+	float: left;
+}
+
+.day-2{
+	float: left;
+}
+
+.day-3{
+	float: right;
+}
+
+.day-temp{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* page 2 */
+.hourly-block{
+	padding-bottom: 10%;
+}
+
+.hourly-icon{	
+	width: 30px;
+	height: auto;
+	padding-top: 5%;
+}
+
+.hourly-hour{
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.hourly-summary{
+	font-size: 12px;
+	font-style: italic;
+}
+
+.hourly-temp{
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+table{
+	width: 100%;
+	text-align: center;
+}
