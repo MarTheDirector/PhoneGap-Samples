@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Basic Black Jack</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<script type="text/javascript">  function replay (){location.reload();}</script>
+</head>
+<body>
+	<div id="overlay" onclick="replay();"></div>
+	<div id="dealerSection">
+		<div id="deltcards-d">
+		</div>
+		<div id="hitcards-d">
+		</div>
+	</div>
+	<div id="bustdiv" onclick="replay();"><h1>YOU BUST!</h1><br/><br/><br/><br/id="mob"><br/id="mob"><br/><h3>Replay?</h3></div>
+	<div id="losediv" onclick="replay();"><h1>YOU LOSE!</h1><br/><br/><br/><br/id="mob"><br/id="mob"><br/><h3>Replay?</h3></div>
+	<div id="windiv" onclick="replay();"><h1>YOU WIN!</h1><br/><br/><br/><br/id="mob"><br/id="mob"><br/><h3>Replay?</h3></div>
+	<div id="counterdivd"></div>
+	<hr/>
+	<div id="counterdiv"></div>
+	<div id="playerSection">
+		<div id="hitcards-p">
+		</div>
+		<div id="deltcards-p">
+		</div>
+	</div>
+	
+</body>
+<script type="text/javascript" src="cards.js"></script>
+</html>

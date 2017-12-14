@@ -1,0 +1,471 @@
+@charset "UTF-8";
+html, body /* html and body styles */
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  background-image:url(images/bg.png);background-repeat: repeat;
+}
+hr /* hr styles */
+{
+  height: 4px;
+  border:none;
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+  width: 600px;
+  margin-right: auto;
+  margin-left:auto;
+  margin-top: 100px;
+}
+button:focus /* remove button focus */
+{
+  outline:0;
+}
+#overlay /* back overlay when game ends */
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+#losediv, #bustdiv, #windiv /* game ending messages divs */
+{
+  position: absolute;
+  top:250px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+
+}
+h1
+{
+  font-size: 3em;
+}
+h3
+{
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2em;
+}
+  
+li 
+{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  list-style-type:none;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#hitcards-p li, #hitcards-d li
+{
+  width: 80px;
+  height: 80px;
+  list-style-type:none;
+  float: left;
+}
+.deltspace
+{
+  position: absolute;
+}
+#counterdivd
+{
+  margin-top: 50px;
+  margin-bottom: -103px;
+  padding-top: 43px;
+  width: 100px;
+  height: 47px;
+  background-image: url(images/count2.svg);
+  background-size: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
+}
+#counterdiv
+{
+  margin-top: -7px;
+  padding-top: 13px;
+  width: 100px;
+  height: 73px;
+  background-image: url(images/count.svg);
+  background-size: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
+}
+#hitcards-p
+{
+  position: absolute;
+  top:500px;
+}
+#hitcards-d
+{
+  margin-top: 15px;
+}
+#deltcards-d
+{
+  height: 200px;
+  position: relative;
+  top: 0;   
+}
+#deltcards-p
+{
+  height: 200px;
+  position: absolute;
+  top:600px;
+}
+#playerSection, #dealerSection
+{
+  width:490px;
+  height: 290px;
+  margin-right: auto;
+  margin-left: auto;
+}
+  @media all and (max-height: 480px) and (max-width: 320px) {
+  #hitButton
+  {
+    background:url(images/hit.svg);background-repeat: no-repeat;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 102px;
+    height: 107px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    padding-top: 150px;
+    padding-right: 85px;
+  }
+  #stayButton
+  {
+    background:url(images/stay.svg);background-repeat: no-repeat;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width: 101px;
+    height: 107px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    padding-top: 150px;
+    padding-left: 75px;
+  }
+  }
+  @media all and (max-width: 500px) and (min-width: 320px) {
+  #hitcards-p li:nth-child(1)
+  {
+    margin-left: 5px;
+  }
+  #hitcards-d li:nth-child(1)
+  {
+    margin-left: 5px;
+  }
+  #hitcards-p li:nth-child(2)
+  {
+    margin-left: -5px;
+  }
+  #hitcards-d li:nth-child(2)
+  {
+    margin-left: -5px;
+  }
+  #hitcards-p li:nth-child(3)
+  {
+    margin-left: 25px;
+  }
+  #hitcards-d li:nth-child(3)
+  {
+    margin-left: 25px;
+  }
+  #hitcards-d li:nth-child(4)
+  {
+    margin-left: -5px;
+  }
+  #hitcards-p li:nth-child(4)
+  {
+    margin-left: -5px;
+  }
+  #losediv, #bustdiv, #windiv
+  {
+  position: absolute;
+  top:80px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  }
+  hr{height: 3px;}
+  h1{font-size: 2em;}
+  h3{font-size: 1.4em;}
+  #mob
+  {
+    display: none;
+  }
+  #hitButton{
+    background:url(images/hit.svg);background-repeat: no-repeat;
+     position: absolute;
+    left:0;
+    bottom: 0;
+    width: 172px;
+    height: 197px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    padding-top: 150px;
+    padding-right: 85px;
+  }
+  #stayButton
+  {
+    background:url(images/stay.svg);background-repeat: no-repeat;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width: 171px;
+    height: 197px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    padding-top: 150px;
+    padding-left: 75px;
+  }
+  #hitcards-p li, #hitcards-d li
+  {
+    width: 40px;
+    height: 40px;
+    list-style-type:none;
+    float: left;
+    margin-left: 0px;
+  }
+  li 
+  {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    list-style-type:none;
+    float: left;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  #counterdivd
+  {
+    margin-top: -85px;
+    margin-bottom: -103px;
+    padding-top: 43px;
+    width: 80px;
+    height: 30px;
+    background-image: url(images/count2.svg);
+    background-size: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #counterdiv
+  {
+    margin-top: -7px;
+    padding-top: 13px;
+    width: 80px;
+    height: 55px;
+    background-image: url(images/count.svg);
+    background-size: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #hitcards-p
+  {
+    position: absolute;
+    top:250px;
+    margin-left: 20px;
+  }
+  #hitcards-d
+  {
+    margin-top: 35px;
+    margin-left: 20px; 
+  }
+  #deltcards-d
+  {
+    height: 80px;
+    position: relative;
+    top: 0;
+    margin-top: 15px;      
+  }
+  #deltcards-p
+  {
+    height: 80px;
+    position: absolute;
+    top:300px;
+  }
+  #playerSection, #dealerSection
+  {
+    width:300px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media all and (max-width: 699px) and (min-width: 501px) {
+  #hitButton
+  {
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width: 50%;
+    height: 40px;
+    background-color:#566499;
+    color: #FFFFFF;
+    border: 2px solid #8db294;
+    cursor: pointer;
+    font-size: 1em;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+    #stayButton
+  {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 50%;
+    height: 40px;
+    background-color:#566499;
+    color: #FFFFFF;
+    border: 2px solid #8db294;
+    cursor: pointer;
+    font-size: 1em;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+}
+@media all and (max-width: 4000px) and (min-width: 700px) { 
+  #hitButton
+  {
+    background-image:url(images/hit2.svg);background-repeat: no-repeat; background-size: 25px; background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 380px; left:0; 
+    right:630px;
+    width: 100px;
+    height: 100px;
+    background-color:#566499;
+    padding-top: 60px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+  }
+  #stayButton
+  {
+    background-image:url(images/stay2.svg);background-repeat: no-repeat; background-size: 30px; background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    position: absolute;
+    top: 380px; right: 0;
+    left:630px;
+    width: 100px;
+    height: 100px;
+    background-color:#566499;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+}
+/* ---------------------------hidden card image---------------------------- */
+.filler{background-image:url(images/b.svg);background-repeat: no-repeat;}
+/* -------------------------the deck of cards images -----------------------*/
+/* Ace */
+.spades.ace{background-image:url(images/as.svg);background-repeat: no-repeat;}
+.clubs.ace{background-image:url(images/ac.svg);background-repeat: no-repeat;}
+.hearts.ace{background-image:url(images/ah.svg);background-repeat: no-repeat;}
+.diamonds.ace{background-image:url(images/ad.svg);background-repeat: no-repeat;}
+/* King */
+.spades.king{background-image:url(images/ks.svg);background-repeat: no-repeat;}
+.clubs.king{background-image:url(images/kc.svg);background-repeat: no-repeat;}
+.hearts.king{background-image:url(images/kh.svg);background-repeat: no-repeat;}
+.diamonds.king{background-image:url(images/kd.svg);background-repeat: no-repeat;}
+/* Queen */
+.spades.queen{background-image:url(images/qs.svg);background-repeat: no-repeat;}
+.clubs.queen{background-image:url(images/qc.svg);background-repeat: no-repeat;}
+.hearts.queen{background-image:url(images/qh.svg);background-repeat: no-repeat;}
+.diamonds.queen{background-image:url(images/qd.svg);background-repeat: no-repeat;}
+/* Jack */
+.spades.jack{background-image:url(images/js.svg);background-repeat: no-repeat;}
+.clubs.jack{background-image:url(images/jc.svg);background-repeat: no-repeat;}
+.hearts.jack{background-image:url(images/jh.svg);background-repeat: no-repeat;}
+.diamonds.jack{background-image:url(images/jd.svg);background-repeat: no-repeat;}
+/* Ten */
+.spades.ten{background-image:url(images/10s.svg);background-repeat: no-repeat;}
+.clubs.ten{background-image:url(images/10c.svg);background-repeat: no-repeat;}
+.hearts.ten{background-image:url(images/10h.svg);background-repeat: no-repeat;}
+.diamonds.ten{background-image:url(images/10d.svg);background-repeat: no-repeat;}
+/* Nine */
+.spades.nine{background-image:url(images/9s.svg);background-repeat: no-repeat;}
+.clubs.nine{background-image:url(images/9c.svg);background-repeat: no-repeat;}
+.hearts.nine{background-image:url(images/9h.svg);background-repeat: no-repeat;}
+.diamonds.nine{background-image:url(images/9d.svg);background-repeat: no-repeat;}
+/* Eight */
+.spades.eight{background-image:url(images/8s.svg);background-repeat: no-repeat;}
+.clubs.eight{background-image:url(images/8c.svg);background-repeat: no-repeat;}
+.hearts.eight{background-image:url(images/8h.svg);background-repeat: no-repeat;}
+.diamonds.eight{background-image:url(images/8d.svg);background-repeat: no-repeat;}
+/* Seven */
+.spades.seven{background-image:url(images/7s.svg);background-repeat: no-repeat;}
+.clubs.seven{background-image:url(images/7c.svg);background-repeat: no-repeat;}
+.hearts.seven{background-image:url(images/7h.svg);background-repeat: no-repeat;}
+.diamonds.seven{background-image:url(images/7d.svg);background-repeat: no-repeat;}
+/* Six */
+.spades.six{background-image:url(images/6s.svg);background-repeat: no-repeat;}
+.clubs.six{background-image:url(images/6c.svg);background-repeat: no-repeat;}
+.hearts.six{background-image:url(images/6h.svg);background-repeat: no-repeat;}
+.diamonds.six{background-image:url(images/6d.svg);background-repeat: no-repeat;}
+/* Five */
+.spades.five{background-image:url(images/5s.svg);background-repeat: no-repeat;}
+.clubs.five{background-image:url(images/5c.svg);background-repeat: no-repeat;}
+.hearts.five{background-image:url(images/5h.svg);background-repeat: no-repeat;}
+.diamonds.five{background-image:url(images/5d.svg);background-repeat: no-repeat;}
+/* Four */
+.spades.four{background-image:url(images/4s.svg);background-repeat: no-repeat;}
+.clubs.four{background-image:url(images/4c.svg);background-repeat: no-repeat;}
+.hearts.four{background-image:url(images/4h.svg);background-repeat: no-repeat;}
+.diamonds.four{background-image:url(images/4d.svg);background-repeat: no-repeat;}
+/* Three */
+.spades.three{background-image:url(images/3s.svg);background-repeat: no-repeat;}
+.clubs.three{background-image:url(images/3c.svg);background-repeat: no-repeat;}
+.hearts.three{background-image:url(images/3h.svg);background-repeat: no-repeat;}
+.diamonds.three{background-image:url(images/3d.svg);background-repeat: no-repeat;}
+/* Two */
+.spades.two{background-image:url(images/2s.svg);background-repeat: no-repeat;}
+.clubs.two{background-image:url(images/2c.svg);background-repeat: no-repeat;}
+.hearts.two{background-image:url(images/2h.svg);background-repeat: no-repeat;}
+.diamonds.two{background-image:url(images/2d.svg);background-repeat: no-repeat;}
