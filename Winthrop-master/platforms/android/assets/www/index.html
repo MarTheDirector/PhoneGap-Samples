@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data: https:;default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/colorbox.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script src="js/jquery.colorbox-min.js"></script>
+
+
+    <title>Winthrop Geolocation</title>
+</head>
+
+<body>
+
+    <div class="overlay how-it-works" id="hiw">
+        <h1>Winthrop Lens</h1>
+        <h2>How it works:</h2>
+        <ol>
+            <li>Walk around and explore campus</li>
+            <li>View images taken at each location</li>
+            <li>Take and share your own pictures</li>
+        </ol>
+        <div class="getstartedbtn">Let's Get Started</div>
+    </div>
+
+    <div class="overlay radial-nav" id="nav">
+        <a href="#gallery" data-transition="slide">
+            <span id="gallery-label">Gallery</span>
+            <div class="menu-icon green">
+                <div class="icon-gallery"></div>
+            </div>
+        </a>
+        <a href="#timeline" data-transition="slide">
+            <span id="timeline-label">Timeline</span>
+            <div class="menu-icon red">
+                <div class="icon-timeline"></div>
+            </div>
+        </a>
+        <div id="camera">
+            <span id="addpicture-label">Add Picture</span>        
+            <div class="menu-icon purple">
+                <div class="icon-camera"></div>
+            </div>            
+        </div>       
+        <a href="#user-profile" data-transition="slide">
+            <span id="profile-label">Profile</span>
+            <div class="menu-icon yellow">
+                <div class="icon-user"></div>
+            </div>
+        </a>
+        <div class="close-nav">
+            <div class="icon-close"></div>
+        </div>                        
+    </div>
+
+    <div data-role="page" id="timeline">    
+        <header>
+            <div>
+                <span>Winthrop Lens</span>
+                <a href="#gallery" data-transition="slide"><img src="img/icons/gallery.png" alt="gallery" id="gallery-icon"></a>
+            </div>
+        </header>
+        <div class="masthead" id="rutledge">
+            <p>You are currently at:</p>
+            <h2>Rutledge Building</h2>
+        </div>
+        <div class="timeline-container">
+            <h2>What are these things hanging from the ceiling? Spending my lunch break at Digs</h2>
+            <div class="timeline-desc">
+                <div class="user-block">
+                    <img src="img/icons/user.png" alt="user-icon">
+                    <span class="user">hahnv2</span>
+                </div>
+                <span class="views">Views: 505</span>
+            </div>
+            <div class="timeline-img timeline-img1"></div>
+        </div>
+        <div class="timeline-container">
+            <h2>We totally skipped our VCOM 462 class to take this picture.</h2>
+            <div class="timeline-desc">
+                <div class="user-block">
+                    <img src="img/icons/user.png" alt="user-icon">
+                    <span class="user">smithj3</span>
+                </div>
+                <span class="views">Views: 350</span>
+            </div>
+            <div class="timeline-img timeline-img2"></div>
+        </div>
+        <div class="timeline-container">
+            <h2>I wish I could remember this party, I heard I had a great time</h2>
+            <div class="timeline-desc">
+                <div class="user-block">
+                    <img src="img/icons/user.png" alt="user-icon">
+                    <span class="user">schipanic2</span>
+                </div>
+                <span class="views">Views: 225</span>
+            </div>
+            <div class="timeline-img timeline-img3"></div>
+        </div>
+        <div class="timeline-container">
+            <h2>I got arrested taking this picture from the water tower. I'd say it was worth it, what do you think?</h2>
+            <div class="timeline-desc">
+                <div class="user-block">
+                    <img src="img/icons/user.png" alt="user-icon">
+                    <span class="user">webbh2</span>
+                </div>
+                <span class="views">Views: 21</span>
+            </div>
+            <div class="timeline-img timeline-img4"></div>
+        </div>        
+        <div class="hamburger-nav">
+            <div class="icon-hamburger"></div>
+        </div>                       
+    </div>
+
+    <div data-role="page" id="gallery">    
+        <header>
+            <div>
+                <span>Winthrop Lens</span>
+                <a href="#timeline" data-transition="slide"><img src="img/icons/timeline.png" alt="timeline" id="timeline-icon"></a>
+            </div>
+        </header>
+        <div class="masthead" id="rutledge">
+            <p>You are currently at:</p>
+            <h2>Rutledge Building</h2>
+        </div>
+        <div class="gallery-container">
+            <div class="row">
+                <div class="gallery-img gall-img1"></div>
+                <div class="gallery-img gall-img2"></div>
+                <div class="gallery-img gall-img3"></div>
+            </div>
+            <div class="row">
+                <div class="gallery-img gall-img4"></div>
+                <div class="gallery-img gall-img5"></div>
+                <div class="gallery-img gall-img6"></div>
+            </div>
+            <div class="row">
+                <div class="gallery-img gall-img7"></div>
+                <div class="gallery-img gall-img8"></div>
+                <div class="gallery-img gall-img9"></div>
+            </div>
+            <div class="row">
+                <div class="gallery-img gall-img10"></div>
+                <div class="gallery-img gall-img11"></div>
+                <div class="gallery-img gall-img12"></div>
+            </div>                                     
+        </div> 
+        <div class="hamburger-nav">
+            <div class="icon-hamburger"></div>
+        </div>               
+    </div>
+
+    <div data-role="page" id="user-profile">    
+        <header>
+            <div>
+                <span>Winthrop Lens</span>
+                <a href="#gallery" data-transition="slide"><img src="img/icons/gallery.png" alt="gallery" id="gallery-icon"></a>
+            </div>
+        </header>
+        <div class="masthead" id="profile">
+            <img src="img/profile-img.png" alt="John Smith">
+            <div class="profile-desc">
+                <div class="profile-name">John Smith</div>
+                <div class="profile-username">@smithj3</div>
+            </div>
+        </div>
+        <div class="profile-links">
+            <div class="links active" id="profile-favorites">Favorites</div>
+            <div class="links" id="profile-uploaded">Uploaded</div>
+            <div class="links" id="profile-following">Following</div>
+        </div>
+        <div class="gallery-container">
+            <div class="row">
+                <div class="gallery-img gall-img1"></div>
+                <div class="gallery-img gall-img2"></div>
+                <div class="gallery-img gall-img3"></div>            
+            </div>
+            <div class="row">
+                <div class="gallery-img gall-img4"></div>
+                <div class="gallery-img gall-img5"></div>
+                <div class="gallery-img gall-img6"></div>
+            </div>
+            <div class="row">
+                <div class="gallery-img gall-img7"></div>
+                <div class="gallery-img gall-img8"></div>
+                <div class="gallery-img gall-img9"></div>
+            </div>
+            <div class="row">
+                <div class="gallery-img gall-img10"></div>
+                <div class="gallery-img gall-img11"></div>
+                <div class="gallery-img gall-img12"></div>
+            </div>                                   
+        </div> 
+        <div class="hamburger-nav">
+            <div class="icon-hamburger"></div>
+        </div> 
+    </div>  
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
