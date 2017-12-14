@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 721 128.4" enable-background="new 0 0 721 128.4" xml:space="preserve">
+<g id="LoginIn_6_">
+	<g display="none">
+		<path id="CenterPeice_3_" display="inline" fill="#6DB9C6" d="M717.6,118c0,5.8-5.9,10.4-13.2,10.4H14.3
+			c-7.3,0-13.2-4.7-13.2-10.4V10.4C1.2,4.7,7.1,0,14.3,0h690.1c7.3,0,13.2,4.7,13.2,10.4V118z"/>
+		<rect id="RightTopCleanup_3_" x="704.4" y="0" display="inline" fill="#6DB9C6" width="13.2" height="10.4"/>
+		<rect id="LeftTopCleanup_3_" x="1.2" y="0" display="inline" fill="#6DB9C6" width="11.7" height="10.4"/>
+	</g>
+	<rect y="0" fill="#6DB9C6" width="719.1" height="128.4"/>
+	<line fill="#6DB9C6" x1="361" y1="0" x2="361" y2="128.4"/>
+</g>
+<g id="NextArrow_5_">
+	<rect x="575.5" y="0" fill="#8F9397" width="145.5" height="128.4"/>
+	<polygon fill="#FFFFFF" points="701,68.3 623.8,106.3 623.9,30.1 	"/>
+	<polygon fill="#6DB9C6" points="681.5,68.3 604.3,106.3 604.4,30.1 	"/>
+</g>
+<rect x="201.5" y="44.9" fill="none" width="153.5" height="46.3"/>
+<text transform="matrix(1 0 0 1 201.4761 88.4101)" fill="#FFFFFF" font-family="'Arimo'" font-size="60">Login</text>
+</svg>

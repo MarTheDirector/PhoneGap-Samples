@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 91.9 90.1" enable-background="new 0 0 91.9 90.1" xml:space="preserve">
+<g>
+	<g id="Video_1_">
+		<g id="CameBody_2_">
+			<path fill="#6DB9C6" d="M56.6,60.3c0,0.9-0.8,1.7-1.7,1.7H29.6c-0.9,0-1.7-0.8-1.7-1.7v-18c0-0.9,0.8-1.7,1.7-1.7h25.2
+				c0.9,0,1.7,0.8,1.7,1.7V60.3z"/>
+		</g>
+		<g id="CamLens_2_">
+			<path fill="#6DB9C6" d="M64,41.1c0-0.9-0.6-1.2-1.2-0.5l-5.6,5.5c-0.7,0.7-1.2,2-1.2,2.9v4.6c0,0.9,0.6,2.3,1.2,2.9l5.6,5.5
+				c0.7,0.7,1.2,0.4,1.2-0.5L64,41.1z"/>
+		</g>
+		<g id="Film_2_">
+			<path id="Left_1_" fill="#6DB9C6" d="M41.7,33.2c0,3.4-2.8,6.2-6.4,6.2l0,0c-3.5,0-6.4-2.8-6.4-6.2l0,0c0-3.4,2.8-6.2,6.4-6.2
+				l0,0C38.8,26.9,41.7,29.7,41.7,33.2L41.7,33.2z"/>
+			<path id="Right_1_" fill="#6DB9C6" d="M54.4,33.2c0,3.4-2.8,6.2-6.4,6.2l0,0c-3.5,0-6.4-2.8-6.4-6.2l0,0c0-3.4,2.8-6.2,6.4-6.2
+				l0,0C51.5,26.9,54.4,29.7,54.4,33.2L54.4,33.2z"/>
+			<path id="Bottom_2_" fill="#6DB9C6" d="M28.9,33c0,0-0.4,6,6.4,6.4H49c0,0,5.4-0.8,5.4-6.4H28.9z"/>
+		</g>
+	</g>
+	<polygon fill="none" stroke="#6DB9C6" stroke-width="3.4455" stroke-miterlimit="10" points="2.5,45.1 45.9,2.4 89.4,45.1 
+		45.9,87.7 	"/>
+</g>
+</svg>
